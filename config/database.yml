@@ -1,0 +1,21 @@
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: newenergy
+#   host: localhost
+#   pool: 5
+#   username: newenergy
+#   password: newenergy
+
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
