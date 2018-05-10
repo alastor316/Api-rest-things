@@ -3,6 +3,7 @@ include Swagger::Docs::ImpotentMethods
 Swagger::Docs::Config.base_api_controller = ActionController::API
 Swagger::Docs::Config.register_apis({
     "1.0" => {
+      :api_extension_type => :json,
       # location where our api doc files will be generated, as of now we will store files under public directory
       :api_file_path => "public/",
       # base path url of our application
@@ -21,7 +22,8 @@ Swagger::Docs::Config.register_apis({
           "description" => "How Swagger works",
           "contact" => "parthmodi54@yahoo.com",
           "license" => "Apache 2.0",
-          "licenseUrl" => "http://www.apache.org/licenses/LICENSE-2.0.html"
+          "licenseUrl" => "http://www.apache.org/licenses/LICENSE-2.0.html",
+
         }
       }
     }

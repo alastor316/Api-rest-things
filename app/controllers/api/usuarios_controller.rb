@@ -7,6 +7,7 @@ before_action :set_usuario, only: [:show, :update, :destroy]
 
 swagger_controller :users, "User Management"
 swagger_api :create do
+
   summary "To create user"
   notes "Implementation notes, such as required params, example queries for apis are written here."
   param :form, "user[name]", :string, :required, "Name of user"

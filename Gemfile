@@ -39,6 +39,7 @@ gem 'swagger-docs'
 
 gem 'swagger_ui_engine'
 
+gem 'swagger-blocks'
 
 #Correr Jobs
 gem "sidekiq"
